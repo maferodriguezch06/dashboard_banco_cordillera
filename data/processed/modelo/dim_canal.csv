@@ -1,0 +1,6 @@
+canal_key,canal_origen,tipo_canal,orden
+1,App,Digital,1
+2,Web,Digital,2
+3,Call center,Remoto asistido,3
+4,Oficina,Presencial,4
+5,Alianza,Tercero,5

@@ -1,0 +1,13 @@
+geo_key,ciudad,departamento,region,lat,lon
+1,Barranquilla,Atlántico,Caribe,10.9639,-74.7964
+2,Cartagena,Bolívar,Caribe,10.391,-75.4794
+3,Santa Marta,Magdalena,Caribe,11.2408,-74.199
+4,Bogotá D.C.,Bogotá D.C.,Centro,4.711,-74.0721
+5,Ibagué,Tolima,Centro,4.4389,-75.2322
+6,Manizales,Caldas,Eje Cafetero,5.0703,-75.5138
+7,Pereira,Risaralda,Eje Cafetero,4.8133,-75.6961
+8,Medellín,Antioquia,Noroccidente,6.2442,-75.5812
+9,Bucaramanga,Santander,Nororiente,7.1193,-73.1227
+10,Cúcuta,Norte de Santander,Nororiente,7.8939,-72.5078
+11,Villavicencio,Meta,Orinoquía,4.142,-73.6266
+12,Cali,Valle del Cauca,Suroccidente,3.4516,-76.532

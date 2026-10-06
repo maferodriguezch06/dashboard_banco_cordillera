@@ -1,0 +1,54 @@
+# Configuración central del proyecto. Lo que se puede ajustar sin tocar código vive aquí.
+
+proyecto:
+  nombre: "Banco Cordillera"
+  subtitulo: "Tablero de riesgo y banca minorista"
+  nombre_estudio: "Maria Fernanda Rodriguez - Lorena Sofia Ostos - Laura Valentina Rairan"
+  audiencia: "Gerencia de Riesgo y Gerencia de Banca Minorista"
+  periodo: "enero 2024 a septiembre 2026"
+
+rutas:
+  raw: "data/raw/04_banco_minorista.csv"
+  procesado: "data/processed/banco_minorista_procesado.csv"
+  modelo: "data/processed/modelo"
+  reportes: "reports"
+
+reglas_negocio:
+  # Días de mora a partir de los cuales una obligación se considera vencida
+  dias_vencida: 30
+  # Umbral de deterioro severo
+  dias_severa: 60
+  # Productos que no son cartera de crédito y salen de los indicadores de riesgo
+  productos_no_credito: ["Cuenta de ahorros"]
+  # Bandas de score (límite inferior incluido, superior excluido)
+  bandas_score:
+    - {min: 0,   max: 500, etiqueta: "Menor a 500"}
+    - {min: 500, max: 600, etiqueta: "500 a 599"}
+    - {min: 600, max: 700, etiqueta: "600 a 699"}
+    - {min: 700, max: 800, etiqueta: "700 a 799"}
+    - {min: 800, max: 901, etiqueta: "800 o más"}
+  # Bandas de uso digital (transacciones en 30 días)
+  bandas_digital:
+    - {min: 0,  max: 11, etiqueta: "Bajo (10 o menos)"}
+    - {min: 11, max: 16, etiqueta: "Medio (11 a 15)"}
+    - {min: 16, max: 21, etiqueta: "Alto (16 a 20)"}
+    - {min: 21, max: 99, etiqueta: "Intensivo (más de 20)"}
+
+metas:
+  # Referencias internas para colorear alertas en los KPI
+  icv_alerta_pct: 10.0
+  score_bajo: 600
+  nps_objetivo: 0
+
+paleta:
+  tinta: "#14213D"        # navy corporativo: estructura, texto, serie principal
+  acero: "#2F5D8A"        # azul acero: estado sano, dato principal
+  niebla: "#8FAECB"       # azul claro: series secundarias
+  bruma: "#C9D5E1"        # gris azulado: contexto, valores neutros
+  oro: "#D19A2A"          # ocre dorado: atención, umbral, alerta moderada
+  oro_claro: "#E9C987"    # ocre claro: mora temprana
+  ciruela: "#6B3E75"      # ciruela: riesgo severo
+  fondo: "#EDF1F5"
+  tarjeta: "#FFFFFF"
+  borde: "#D8E0E8"
+  texto_suave: "#5A6B80"

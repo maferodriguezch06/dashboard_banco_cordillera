@@ -1,0 +1,171 @@
+{
+  "filas": 57000,
+  "columnas": 17,
+  "variables": [
+    {
+      "variable": "id_cliente_anonimo",
+      "tipo_origen": "str",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 26181,
+      "minimo": null,
+      "maximo": null
+    },
+    {
+      "variable": "fecha_corte",
+      "tipo_origen": "str",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 1004,
+      "minimo": null,
+      "maximo": null
+    },
+    {
+      "variable": "ciudad",
+      "tipo_origen": "str",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 12,
+      "minimo": null,
+      "maximo": null
+    },
+    {
+      "variable": "departamento",
+      "tipo_origen": "str",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 12,
+      "minimo": null,
+      "maximo": null
+    },
+    {
+      "variable": "region",
+      "tipo_origen": "str",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 7,
+      "minimo": null,
+      "maximo": null
+    },
+    {
+      "variable": "producto",
+      "tipo_origen": "str",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 5,
+      "minimo": null,
+      "maximo": null
+    },
+    {
+      "variable": "segmento",
+      "tipo_origen": "str",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 4,
+      "minimo": null,
+      "maximo": null
+    },
+    {
+      "variable": "canal_origen",
+      "tipo_origen": "str",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 5,
+      "minimo": null,
+      "maximo": null
+    },
+    {
+      "variable": "saldo_o_monto_cop",
+      "tipo_origen": "int64",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 56905,
+      "minimo": 284671.0,
+      "maximo": 1792377310.0
+    },
+    {
+      "variable": "score_riesgo",
+      "tipo_origen": "int64",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 499,
+      "minimo": 350.0,
+      "maximo": 900.0
+    },
+    {
+      "variable": "dias_mora",
+      "tipo_origen": "int64",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 121,
+      "minimo": 0.0,
+      "maximo": 120.0
+    },
+    {
+      "variable": "estado_obligacion",
+      "tipo_origen": "str",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 4,
+      "minimo": null,
+      "maximo": null
+    },
+    {
+      "variable": "tasa_efectiva_anual_pct",
+      "tipo_origen": "float64",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 3176,
+      "minimo": 6.0,
+      "maximo": 39.0
+    },
+    {
+      "variable": "ingreso_mensual_rango",
+      "tipo_origen": "str",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 4,
+      "minimo": null,
+      "maximo": null
+    },
+    {
+      "variable": "transacciones_digitales_30d",
+      "tipo_origen": "int64",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 33,
+      "minimo": 2.0,
+      "maximo": 36.0
+    },
+    {
+      "variable": "reclamos_90d",
+      "tipo_origen": "int64",
+      "faltantes": 0,
+      "pct_faltantes": 0.0,
+      "valores_unicos": 5,
+      "minimo": 0.0,
+      "maximo": 4.0
+    },
+    {
+      "variable": "nps_0a10",
+      "tipo_origen": "float64",
+      "faltantes": 855,
+      "pct_faltantes": 1.5,
+      "valores_unicos": 11,
+      "minimo": 0.0,
+      "maximo": 10.0
+    }
+  ],
+  "duplicados_exactos": 0,
+  "duplicados_cliente_fecha_producto": 13,
+  "clientes_unicos": 26181,
+  "registros_por_cliente_max": 8,
+  "incoherencias_estado_vs_dias": 0,
+  "ahorros_con_dias_mora": 1969,
+  "ahorros_total": 14406,
+  "fecha_min": "2024-01-01",
+  "fecha_max": "2026-09-30",
+  "score_fuera_rango": 0,
+  "nps_fuera_rango": 0,
+  "saldos_no_positivos": 0
+}

@@ -1,0 +1,19 @@
+[theme]
+base = "light"
+primaryColor = "#2F5D8A"
+backgroundColor = "#EDF1F5"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#14213D"
+font = "sans serif"
+
+[server]
+headless = true
+runOnSave = true
+# Sirve app/static/ (mapas base del gráfico geográfico, para no depender de internet)
+enableStaticServing = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"

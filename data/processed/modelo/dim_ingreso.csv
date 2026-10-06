@@ -1,0 +1,5 @@
+ingreso_key,ingreso_mensual_rango,orden
+1,<2 SMMLV,1
+2,2-4 SMMLV,2
+3,4-8 SMMLV,3
+4,>8 SMMLV,4

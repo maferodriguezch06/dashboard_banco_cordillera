@@ -1,0 +1,6 @@
+producto_key,producto,familia,naturaleza,es_credito,orden
+1,Tarjeta de crédito,Rotativo,Activo,True,1
+2,Crédito libre inversión,Consumo,Activo,True,2
+3,Crédito vehículo,Vehículo,Activo,True,3
+4,Crédito vivienda,Hipotecario,Activo,True,4
+5,Cuenta de ahorros,Captación,Pasivo,False,5

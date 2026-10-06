@@ -1,0 +1,28 @@
+﻿variable,naturaleza,funcion_analitica,descripcion
+id_registro,Derivada,Llave,"Consecutivo único por fila, creado en el pipeline"
+id_cliente_anonimo,Categórica,Identificador,Cliente anonimizado; se repite en varios cortes
+fecha_corte,Temporal,Dimensión / filtro,Fecha de corte de la obligación
+ciudad,Geográfica,Dimensión / filtro,Ciudad de la obligación
+departamento,Geográfica,Dimensión,Departamento
+region,Geográfica,Dimensión / filtro,Región comercial
+producto,Categórica,Dimensión / filtro,Producto financiero
+segmento,Categórica,Dimensión / filtro,Segmento comercial del cliente
+canal_origen,Categórica,Dimensión / filtro,Canal por el que se originó el producto
+saldo_o_monto_cop,Numérica continua,Métrica,Saldo de la obligación o monto de la cuenta (COP)
+score_riesgo,Numérica discreta,Métrica / banda,Puntaje de riesgo 350 a 900; mayor es mejor
+dias_mora,Numérica discreta,Métrica,Días de atraso 0 a 120
+estado_obligacion,Categórica ordinal,Dimensión,"Al día, Mora 1-30, 31-60, >60"
+tasa_efectiva_anual_pct,Numérica continua,Métrica,Tasa efectiva anual (%)
+ingreso_mensual_rango,Categórica ordinal,Dimensión,Rango de ingreso en salarios mínimos
+transacciones_digitales_30d,Numérica discreta,Métrica / banda,Transacciones digitales últimos 30 días
+reclamos_90d,Numérica discreta,Métrica,Reclamos radicados en 90 días
+nps_0a10,Numérica ordinal,Métrica,Recomendación 0 a 10; tiene faltantes
+vencida_30,Derivada,Bandera KPI,dias_mora > 30
+severa_60,Derivada,Bandera KPI,dias_mora > 60
+saldo_vencido_30,Derivada,Métrica KPI,Saldo si la obligación está vencida a más de 30 días
+banda_score,Derivada,Dimensión,Score agrupado en 5 bandas
+banda_digital,Derivada,Dimensión,Transacciones digitales agrupadas en 4 bandas
+categoria_nps,Derivada,Dimensión,"Promotor 9-10, Pasivo 7-8, Detractor 0-6, Sin respuesta"
+alerta_ahorro_con_mora,Derivada,Calidad de datos,Cuenta de ahorros con días de mora (sobregiro)
+saldo_atipico,Derivada,Calidad de datos,"Saldo sobre Q3 + 1,5·IQR dentro de su producto"
+posible_duplicado,Derivada,Calidad de datos,"Mismo cliente, fecha y producto"
