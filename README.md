@@ -107,3 +107,4 @@ No hay carpeta `models/` porque el proyecto no entrena modelos predictivos. El m
 - **Tooltips** en español con formato de pesos y porcentaje en todos los gráficos.
 
 Datos sintéticos y anonimizados con fines académicos.
+Para acceder al streamlit: https://dashboardbancocordillera-adqtet7ndqk7mckn88ccwu.streamlit.app/
